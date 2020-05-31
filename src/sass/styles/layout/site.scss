@@ -1,0 +1,21 @@
+.site-header {
+    @include size(100vw, auto);
+    min-height: 700px;
+    background: {
+        image: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.65) 0%,
+                rgba(0, 0, 0, 0.05) 100%
+            ),
+            url('../../../images/banner.png');
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .background {
+        background-image: url('../../../images/banner@2x.png');
+    }
+}
