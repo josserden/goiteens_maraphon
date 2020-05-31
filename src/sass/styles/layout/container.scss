@@ -1,0 +1,5 @@
+.container {
+    @include size(100%, auto);
+    max-width: $cont-desk;
+    @include margin(0 auto);
+}

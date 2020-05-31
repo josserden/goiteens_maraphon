@@ -1,0 +1,28 @@
+//Основные шрифты
+$main-font: 'Roboto', sans-serif;
+$heading-font-style: 'Raleway', sans-serif;
+
+//Цвета
+$accent-backgound: #f5f4fa;
+$main-color: #504c5c;
+$heading-color: #343434;
+$accent-color: #fec830;
+$overlay-color: rgba(34, 34, 34, 0.7);
+
+// Размеры шрифтов
+$main-text: 18px;
+$heading-text: 60px;
+
+//Контейнера
+$cont-mob: 280px;
+$cont-tab: 610px;
+$cont-desk: 1070px;
+
+//Брекпоинты
+
+//Маленькие планшеты и большие смартфоны (альбомная ориентация)
+$screen-sm-min: 576px; //
+// Маленькие планшеты (портретная ориентация)
+$screen-md-min: 768px;
+// Планшеты и маленькие рабочие столы
+$screen-lg-min: 992px;

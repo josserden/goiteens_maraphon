@@ -1,0 +1,14 @@
+// Стили, миксины и прочее от третьих лиц
+@import './styles/vendors/main';
+
+// Глобальные миксины, плейсхолдеры и переменные
+@import './styles/utils/main';
+
+// Глобальные стили и шрифты
+@import './styles/base/main';
+
+// Стили для основных компонентов макета
+@import './styles/layout/main';
+
+// Компоненты с файлом .scss
+@import './styles/components/main';
