@@ -30,13 +30,28 @@
 
         <ul class="section__list program__list">
             <li class="section__item program__item">
-                <img
-                    src="./images/tech-skills.png"
-                    alt="tech skills photo"
-                    srcset="./images/tech-skills@2x.png"
-                    width="470"
-                    height="370"
-                />
+                <picture>
+                    <source
+                        media="(min-width: 900px)"
+                        srcset="
+                            ./images/tech-skills.png    1x,
+                            ./images/tech-skills@2x.png 2x
+                        "
+                    />
+                    <source
+                        media="(min-width: 600px)"
+                        srcset="
+                            ./images/tech-skills-tab.png    1x,
+                            ./images/tech-skills-tab@2x.png 2x
+                        "
+                    />
+                    <img
+                        src="./images/tech-skills-mob.png"
+                        srcset="./images/tech-skills-mob@2x.png 2x"
+                        alt="soft skills photo"
+                    />
+                </picture>
+
                 <div class="program__item-content">
                     <h3 class="section__item-title">Tech Skills</h3>
                     <p>
