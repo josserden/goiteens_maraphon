@@ -49,40 +49,40 @@
     }
 }
 
-@include md {
-    .site__header {
-        max-width: 768px;
+// @include md {
+//     .site__header {
+//         max-width: 768px;
 
-        @include padding(50px 0);
-    }
+//         @include padding(50px 0);
+//     }
 
-    .site__logo {
-        display: inline-block;
+//     .site__logo {
+//         display: inline-block;
 
-        &__link {
-            display: inline-block;
-            @include size(100%, auto);
-        }
-    }
+//         &__link {
+//             display: inline-block;
+//             @include size(100%, auto);
+//         }
+//     }
 
-    .site__heading {
-        font: {
-            family: $heading-font-style;
-            size: 64px;
-            line-height: 75px;
-            weight: 600;
-        }
-        color: $main-white-color;
-    }
+//     .site__heading {
+//         font: {
+//             family: $heading-font-style;
+//             size: 64px;
+//             line-height: 75px;
+//             weight: 600;
+//         }
+//         color: $main-white-color;
+//     }
 
-    .site__header-content {
-        font-size: 24px;
-        color: $main-white-color;
-    }
-}
+//     .site__header-content {
+//         font-size: 24px;
+//         color: $main-white-color;
+//     }
+// }
 
-@include lg {
-    .site__header {
-        max-width: 1600px;
-    }
-}
+// @include lg {
+//     .site__header {
+//         max-width: 1600px;
+//     }
+// }

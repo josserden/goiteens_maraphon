@@ -11,18 +11,18 @@
     color: $accent-color;
 }
 
-@include md {
-    .heading {
-        font-size: $heading-text-m;
-    }
+// @include md {
+//     .heading {
+//         font-size: $heading-text-m;
+//     }
 
-    .heading--accent {
-        font-size: 24px;
-    }
-}
+//     .heading--accent {
+//         font-size: 24px;
+//     }
+// }
 
-@include lg {
-    .heading {
-        font-size: $heading-text-lg;
-    }
-}
+// @include lg {
+//     .heading {
+//         font-size: $heading-text-lg;
+//     }
+// }
