@@ -20,4 +20,19 @@
             color: $accent-color;
         }
     }
+
+    &__list {
+    }
+
+    &__item {
+        padding-bottom: 60px;
+
+        &-title {
+            @include font-source-sans(20px, $heading-color, 700, 23px);
+        }
+
+        img {
+            width: 100%;
+        }
+    }
 }

@@ -1,5 +1,6 @@
 .btn {
-    display: inline-block;
+    display: block;
+    max-width: 280px;
     text: {
         align: center;
         decoration: none;
@@ -12,6 +13,7 @@
     background-color: $accent-color;
     cursor: pointer;
     transition: background-color 0.2s;
+    margin: 0 auto;
 }
 
 .btn:active {
