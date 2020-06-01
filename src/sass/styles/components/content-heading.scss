@@ -1,8 +1,9 @@
-.content-heading {
+.content__heading {
+    @extend %reset;
     display: inline-block;
     @include font-source-sans($heading-text, $heading-color, 600, 56px);
 }
 
-.content-heading--accent {
+.content__heading--accent {
     color: $accent-color;
 }

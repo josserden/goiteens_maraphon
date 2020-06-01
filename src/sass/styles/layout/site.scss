@@ -1,4 +1,4 @@
-.site-header {
+.site__header {
     // @include size(100vw, auto);
     min-height: 700px;
     max-width: 1600px;
@@ -17,7 +17,7 @@
     }
 }
 
-.site-logo {
+.site__logo {
     display: inline-block;
     margin-top: 50px;
 
@@ -27,7 +27,7 @@
     }
 }
 
-.site-heading {
+.site__heading {
     font: {
         family: $heading-font-style;
         size: 64px;
@@ -37,7 +37,7 @@
     color: $main-white-color;
 }
 
-.site-header-content {
+.site__header-content {
     font-size: 24px;
     color: $main-white-color;
 }

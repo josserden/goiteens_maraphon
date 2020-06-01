@@ -1,0 +1,5 @@
+.section {
+    display: block;
+    @include size(100%, auto);
+    @include padding(50px null);
+}
