@@ -62,13 +62,20 @@
                 </li>
                 <li>
                     <div>
-                        <img
-                            src="./images/medali-1.png"
-                            alt="medali photo"
-                            srcset="./images/medali-1@2x.png"
-                            width="268"
-                            height="170"
-                        />
+                        <picture>
+                            <source
+                                media="(min-width: 600px)"
+                                srcset="
+                                    ./images/medali-1.png    1x,
+                                    ./images/medali-1@2x.png 2x
+                                "
+                            />
+                            <img
+                                src="./images/medali-mob.png"
+                                srcset="./images/medali-mob@2x.png 2x"
+                                alt="soft skills photo"
+                            />
+                        </picture>
                     </div>
                     <h4>
                         Всеукраїнський національний проект визначив GoIT лідером

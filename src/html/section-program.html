@@ -66,15 +66,30 @@
 
             <!-- Poster Soft Skills -->
             <li class="section__item program__item poster reverse">
-                <img
-                    src="./images/soft-skills.png"
-                    alt="soft skills photo"
-                    srcset="./images/soft-skills@2x.png"
-                    width="470"
-                    height="370"
-                />
+                <picture>
+                    <source
+                        media="(min-width: 900px)"
+                        srcset="
+                            ./images/soft-skills.png    1x,
+                            ./images/soft-skills@2x.png 2x
+                        "
+                    />
+                    <source
+                        media="(min-width: 600px)"
+                        srcset="
+                            ./images/soft-skills-tab.png    1x,
+                            ./images/soft-skills-tab@2x.png 2x
+                        "
+                    />
+                    <img
+                        src="./images/soft-skills-mob.png"
+                        srcset="./images/soft-skills-mob@2x.png 2x"
+                        alt="soft skills photo"
+                    />
+                </picture>
+
                 <div class="program__item-content">
-                    <h3 class="section__item-title">Tech Skills</h3>
+                    <h3 class="section__item-title">Soft Skills</h3>
                     <p>
                         Під час навчання в ігровій формі дитина підвищує свої
                         навички в спілкуванні з однолітками і старшими
@@ -88,13 +103,27 @@
 
             <!-- Poster WOW-Lectures -->
             <li class="section__item program__item">
-                <img
-                    src="./images/lecture.png"
-                    alt="soft skills photo"
-                    srcset="./images/lecture@2x.png"
-                    width="470"
-                    height="370"
-                />
+                <picture>
+                    <source
+                        media="(min-width: 900px)"
+                        srcset="
+                            ./images/lecture.png    1x,
+                            ./images/lecture@2x.png 2x
+                        "
+                    />
+                    <source
+                        media="(min-width: 600px)"
+                        srcset="
+                            ./images/lecture-tab.png    1x,
+                            ./images/lecture-tab@2x.png 2x
+                        "
+                    />
+                    <img
+                        src="./images/lecture-mob.png"
+                        srcset="./images/lecture-mob@2x.png 2x"
+                        alt="soft skills photo"
+                    />
+                </picture>
 
                 <div class="program__item-content">
                     <h3 class="section__item-title">WOW - Lectures</h3>
