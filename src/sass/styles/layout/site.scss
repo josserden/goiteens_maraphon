@@ -10,7 +10,7 @@
                 rgba(0, 0, 0, 0.65) 0%,
                 rgba(0, 0, 0, 0.05) 100%
             ),
-            url('../../../images/banner.png');
+            url('../images/banner.png');
         size: cover;
         repeat: no-repeat;
         position: center;
@@ -44,6 +44,6 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .background {
-        background-image: url('../../../images/banner@2x.png');
+        background-image: url('../images/banner@2x.png');
     }
 }
