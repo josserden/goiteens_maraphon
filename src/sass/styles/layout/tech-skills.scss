@@ -1,0 +1,20 @@
+.tech-skills {
+    &__list {
+        @include for-size(desktop-up) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        background: #fff;
+        padding: 40px 20px;
+
+        @include for-size(tablet-portrait-up) {
+            padding: 40px 50px;
+        }
+
+        @include for-size(desktop-up) {
+            width: calc((100% - 30px * 2) / 3);
+        }
+    }
+}
