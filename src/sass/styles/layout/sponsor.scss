@@ -1,0 +1,49 @@
+.sponsor {
+    &__content {
+        @include for-size(desktop-up) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.awards {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include for-size(desktop-up) {
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        width: 280px;
+
+        @include for-size(tablet-portrait-up) {
+            width: 354px;
+        }
+
+        @include for-size(desktop-up) {
+            width: calc((100% - 30px * 2) / 3);
+        }
+
+        img {
+            max-height: 100%;
+            width: auto;
+            margin: auto;
+        }
+
+        &-img-wrap {
+            padding: 35px 15px;
+            border: 1px solid #fec830;
+            text-align: center;
+            height: 270px;
+
+            @include for-size(tablet-portrait-up) {
+                height: 310px;
+            }
+        }
+    }
+}
