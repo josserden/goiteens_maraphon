@@ -2,4 +2,22 @@
     display: block;
     @include size(100%, auto);
     @include padding(50px null);
+
+    &--clr {
+        background-color: $accent-backgound;
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title {
+        @extend %reset;
+        display: inline-block;
+        @include font-source-sans($heading-text-m, $heading-color, 600, 56px);
+
+        &--accent {
+            color: $accent-color;
+        }
+    }
 }
