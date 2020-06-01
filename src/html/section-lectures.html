@@ -10,13 +10,27 @@
         <div>
             <ul class="section__list lectures__list">
                 <li class="section__item lectures__item">
-                    <img
-                        src="./images/lecture-1.png"
-                        alt="soft skills photo"
-                        srcset="./images/lecture-1@2x.png"
-                        width="270"
-                        height="260"
-                    />
+                    <picture>
+                        <source
+                            media="(min-width: 900px)"
+                            srcset="
+                                ./images/lecture-1.png    1x,
+                                ./images/lecture-1@2x.png 2x
+                            "
+                        />
+                        <source
+                            media="(min-width: 600px)"
+                            srcset="
+                                ./images/lecture-1-tab.png    1x,
+                                ./images/lecture-1-tab@2x.png 2x
+                            "
+                        />
+                        <img
+                            src="./images/lecture-1-mob.png"
+                            srcset="./images/lecture-1-mob@2x.png 2x"
+                            alt="soft skills photo"
+                        />
+                    </picture>
                     <div class="lectures__item-content">
                         <h4>Анна Альберт</h4>
                         <p>Product Owner</p>
@@ -25,13 +39,28 @@
                 </li>
 
                 <li class="section__item lectures__item">
-                    <img
-                        src="./images/lecture-2.png"
-                        alt="soft skills photo"
-                        srcset="../images/lecture-2@2x.png"
-                        width="270"
-                        height="260"
-                    />
+                    <picture>
+                        <source
+                            media="(min-width: 900px)"
+                            srcset="
+                                ./images/lecture-2.png    1x,
+                                ./images/lecture-2@2x.png 2x
+                            "
+                        />
+                        <source
+                            media="(min-width: 600px)"
+                            srcset="
+                                ./images/lecture-2-tab.png    1x,
+                                ./images/lecture-2-tab@2x.png 2x
+                            "
+                        />
+                        <img
+                            src="./images/lecture-2-mob.png"
+                            srcset="./images/lecture-2-mob@2x.png 2x"
+                            alt="soft skills photo"
+                        />
+                    </picture>
+
                     <div class="lectures__item-content">
                         <h4>Cтаніслав Кондратюк</h4>
                         <p>JavaScript Developer</p>
@@ -40,13 +69,27 @@
                 </li>
 
                 <li class="section__item lectures__item">
-                    <img
-                        src="./images/lecture-3.png"
-                        alt="soft skills photo"
-                        srcset="./images/lecture-3@2x.png"
-                        width="270"
-                        height="260"
-                    />
+                    <picture>
+                        <source
+                            media="(min-width: 900px)"
+                            srcset="
+                                ./images/lecture-3.png    1x,
+                                ./images/lecture-3@2x.png 2x
+                            "
+                        />
+                        <source
+                            media="(min-width: 600px)"
+                            srcset="
+                                ./images/lecture-3-tab.png    1x,
+                                ./images/lecture-3-tab@2x.png 2x
+                            "
+                        />
+                        <img
+                            src="./images/lecture-3-mob.png"
+                            srcset="./images/lecture-3-mob@2x.png 2x"
+                            alt="soft skills photo"
+                        />
+                    </picture>
                     <div class="lectures__item-content">
                         <h4>Родіон Романов</h4>
                         <p>JavaScript Developer</p>
@@ -54,7 +97,7 @@
                     </div>
                 </li>
 
-                <li class="section__item lectures__item lectures__item--acc ">
+                <li class="section__item lectures__item lectures__item--acc">
                     <div>
                         <p>
                             Хочете взяти участь в проєкті і поділитися своїм
