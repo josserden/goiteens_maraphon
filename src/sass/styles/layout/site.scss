@@ -1,7 +1,10 @@
 .site-header {
-    @include size(100vw, auto);
+    // @include size(100vw, auto);
     min-height: 700px;
+    max-width: 1600px;
+    overflow: hidden;
     background: {
+        color: $overlay-color;
         image: linear-gradient(
                 0deg,
                 rgba(0, 0, 0, 0.65) 0%,
@@ -12,6 +15,31 @@
         repeat: no-repeat;
         position: center;
     }
+}
+
+.site-logo {
+    display: inline-block;
+    margin-top: 50px;
+
+    &__link {
+        display: inline-block;
+        @include size(100%, auto);
+    }
+}
+
+.site-heading {
+    font: {
+        family: $heading-font-style;
+        size: 64px;
+        line-height: 75px;
+        weight: 600;
+    }
+    color: $main-white-color;
+}
+
+.site-header-content {
+    font-size: 24px;
+    color: $main-white-color;
 }
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {

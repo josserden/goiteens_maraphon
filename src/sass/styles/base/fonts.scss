@@ -7,6 +7,14 @@
         url('../../fonts/raleway-v14-latin-regular.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../../fonts/raleway-v14-latin-600.woff2') format('woff2'),
+        url('../../fonts/raleway-v14-latin-600.woff') format('woff');
+}
+
 /* roboto-regular - latin_cyrillic */
 @font-face {
     font-family: 'Roboto';

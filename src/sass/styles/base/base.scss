@@ -12,3 +12,7 @@ body {
     @include font-source-sans($main-text, $main-color, normal, 1.2);
     @extend %reset;
 }
+
+li {
+    list-style-type: none;
+}
