@@ -1,8 +1,10 @@
 .site__header {
-    // @include size(100vw, auto);
-    min-height: 700px;
-    max-width: 1600px;
+    @include size(100vw, auto);
     overflow: hidden;
+    min-height: 700px;
+    max-width: 100%;
+    @include padding(40px 0);
+    @include margin(null 0);
     background: {
         color: $overlay-color;
         image: linear-gradient(
@@ -19,9 +21,8 @@
 
 .site__logo {
     display: inline-block;
-    margin-top: 50px;
 
-    &__link {
+    &--link {
         display: inline-block;
         @include size(100%, auto);
     }
@@ -45,5 +46,43 @@
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .background {
         background-image: url('../images/banner@2x.png');
+    }
+}
+
+@include md {
+    .site__header {
+        max-width: 768px;
+
+        @include padding(50px 0);
+    }
+
+    .site__logo {
+        display: inline-block;
+
+        &__link {
+            display: inline-block;
+            @include size(100%, auto);
+        }
+    }
+
+    .site__heading {
+        font: {
+            family: $heading-font-style;
+            size: 64px;
+            line-height: 75px;
+            weight: 600;
+        }
+        color: $main-white-color;
+    }
+
+    .site__header-content {
+        font-size: 24px;
+        color: $main-white-color;
+    }
+}
+
+@include lg {
+    .site__header {
+        max-width: 1600px;
     }
 }

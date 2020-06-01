@@ -1,0 +1,18 @@
+.wrapper {
+    @include size(80%, null);
+    @include margin(0 auto);
+    max-width: $cont-mob;
+    text-align: center;
+}
+
+@include md {
+    .wrapper {
+        max-width: $cont-tab;
+    }
+}
+
+@include lg {
+    .wrapper {
+        max-width: $cont-desk;
+    }
+}

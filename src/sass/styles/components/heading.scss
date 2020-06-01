@@ -1,13 +1,28 @@
 .heading {
     display: inline-block;
-    font: {
-        size: $heading-text;
-    }
+    font-size: $heading-text-s;
     color: $main-white-color;
+    @extend %reset;
 }
 
 .heading--accent {
     display: block;
-    font-size: 24px;
+    font-size: 14px;
     color: $accent-color;
+}
+
+@include md {
+    .heading {
+        font-size: $heading-text-m;
+    }
+
+    .heading--accent {
+        font-size: 24px;
+    }
+}
+
+@include lg {
+    .heading {
+        font-size: $heading-text-lg;
+    }
 }

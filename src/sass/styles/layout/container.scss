@@ -1,6 +1,3 @@
 .container {
-    @include size(80%, auto);
-    max-width: $cont-desk;
-    @include margin(0 auto);
-    text-align: center;
+    @include size(100%, null);
 }

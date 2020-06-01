@@ -1,7 +1,7 @@
 .content__heading {
     @extend %reset;
     display: inline-block;
-    @include font-source-sans($heading-text, $heading-color, 600, 56px);
+    @include font-source-sans($heading-text-s, $heading-color, 600, 56px);
 }
 
 .content__heading--accent {
