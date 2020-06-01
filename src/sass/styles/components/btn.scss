@@ -11,6 +11,7 @@
     color: $btn-color;
     background-color: $accent-color;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .btn:active {
@@ -22,6 +23,7 @@
     color: $accent-color;
     border-color: $accent-color;
     background-color: $main-white-color;
+    transition: background-color 0.2s;
 }
 
 .btn::-moz-focus-inner {
