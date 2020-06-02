@@ -1,4 +1,22 @@
 .btn {
+  display: block;
+  max-width: 280px;
+
+  text: {
+    align: center;
+    decoration: none;
+  }
+
+  font-size: $btn-text;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 22px 24px;
+  color: $btn-color;
+  background-color: $accent-color;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 0 auto;
+
     display: block;
     max-width: 280px;
 
@@ -7,38 +25,37 @@
         decoration: none;
     }
     @include font-source-sans($btn-text, $btn-color, bold, 24px);
-    // font-size: $btn-text;
     border: solid 1px transparent;
     border-radius: 4px;
     padding: 22px 24px;
-    // color: $btn-color;
     background-color: $accent-color;
     cursor: pointer;
     transition: background-color 0.2s;
     margin: 0 auto;
+
 }
 
 .btn:active {
-    transform: translateY(1px);
-    filter: saturate(150%);
+  transform: translateY(1px);
+  filter: saturate(150%);
 }
 
 .btn:hover {
-    color: $accent-color;
-    border-color: $accent-color;
-    background-color: $main-white-color;
-    transition: background-color 0.2s;
+  color: $accent-color;
+  border-color: $accent-color;
+  background-color: $main-white-color;
+  transition: background-color 0.2s;
 }
 
 .btn::-moz-focus-inner {
-    border: none;
+  border: none;
 }
 
 .btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px $accent-color, 0 0 0 1.5px $accent-color;
+  outline: none;
+  box-shadow: 0 0 0 3px $accent-color, 0 0 0 1.5px $accent-color;
 }
 
 .js-focus-visible .btn:focus:not(.focus-visible) {
-    box-shadow: none;
+  box-shadow: none;
 }

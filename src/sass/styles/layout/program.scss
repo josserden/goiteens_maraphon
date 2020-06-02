@@ -1,36 +1,37 @@
 .program {
-    &__list {
-    }
+  &__list {}
 
-    &__item {
-    }
+  &__item {}
 
-    &__title {
-    }
+  &__title {}
 }
 
 @include for-size(desktop-up) {
-    .program {
-        &__list {
-            padding: 50px 70px;
-        }
-        &__item {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 100px;
-
-            img {
-                width: calc(50% - 15px);
-            }
-
-            &-content {
-                width: calc(50% - 15px);
-                padding: 15px;
-            }
-
-            &.reverse {
-                flex-direction: row-reverse;
-            }
-        }
+  .program {
+    &__list {
+      padding: 50px 70px;
     }
+
+    &__item {
+      display: flex;
+      justify-content: space-around;
+      //   padding-bottom: 100px;
+
+      img {
+        // width: calc(80% - 15px);
+        margin: 0;
+      }
+
+      &-content {
+        width: calc(65% - 15px);
+        font-size: large;
+        ;
+        padding: 15px;
+      }
+
+      &.reverse {
+        flex-direction: row-reverse;
+      }
+    }
+  }
 }
