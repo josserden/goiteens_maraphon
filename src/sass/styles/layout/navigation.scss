@@ -1,44 +1,44 @@
 .navigation {
-  display: block;
-  margin-bottom: 20px;
-  text-align: center;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .navigation__list {
-  display: inline-block;
-  @extend %reset;
+    display: inline-block;
+    @extend %reset;
 }
 
 .navigation__item {
-  display: inline-block;
-  margin-right: 25px;
+    display: inline-block;
+    margin-right: 25px;
 
-  &:nth-last-of-type(1) {
-    margin-right: 0;
-  }
+    &:nth-last-of-type(1) {
+        margin-right: 0;
+    }
 
-  @include for-size(tablet-portrait-up) {
-    margin-right: 50px;
-  }
+    @include for-size(tablet-portrait-up) {
+        margin-right: 50px;
+    }
 }
 
 .navigation__link {
-  display: inline-block;
-  position: relative;
-  color: $link-color;
+    display: inline-block;
+    position: relative;
+    color: $link-color;
 
-  &::after {
-    position: absolute;
-    display: block;
-    content: '';
-    background-color: $accent-color;
-    @include size(100%, 3px);
-    margin: 2px auto 0;
-    transition: opacity 0.2s;
-  }
+    &::after {
+        position: absolute;
+        display: block;
+        content: '';
+        background-color: $accent-color;
+        @include size(100%, 3px);
+        margin: 2px auto 0;
+        transition: opacity 0.2s;
+    }
 
-  &:hover::after {
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
+    &:hover::after {
+        opacity: 0;
+        transition: opacity 0.2s;
+    }
 }
