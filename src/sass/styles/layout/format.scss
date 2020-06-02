@@ -1,24 +1,46 @@
 .format {
-  &__content {
-    @include for-size(desktop-up) {
-      display: flex;
-      justify-content: center;
-    }
+    &__content {
+        @include for-size(desktop-up) {
+            display: flex;
+            justify-content: center;
+        }
 
-    &-info {
-      padding: 15px;
-      margin: 0 auto;
-      text-align: center;
+        &-info {
+            padding: 15px;
+            margin: 0 auto;
+            text-align: left;
 
-      @include for-size(desktop-up) {
-        width: calc((100% - 30px) / 12 * 5);
-      }
-    }
+            @include for-size(desktop-up) {
+                width: calc((100% - 30px) / 12 * 5);
+            }
+        }
 
-    &-img {
-      @include for-size(desktop-up) {
-        width: calc((100% - 30px) / 12 * 7);
-      }
+        &-img {
+            @include for-size(desktop-up) {
+                width: calc((100% - 30px) / 12 * 7);
+            }
+        }
+
+        &-item {
+            position: relative;
+            padding-left: 20px;
+
+            &::before {
+                @include position(absolute, null null null -20px);
+                @include psevdo;
+                @include size(20px, 20px);
+                background: {
+                    position: center;
+                    size: cover;
+                    repeat: no-repeat;
+                    image: linear-gradient(
+                            0deg,
+                            rgba(34, 34, 34, 0.7) 0%,
+                            rgba(34, 34, 34, 0.7) 100%
+                        ),
+                        url(../images/icon/team-list.svg);
+                }
+            }
+        }
     }
-  }
 }
