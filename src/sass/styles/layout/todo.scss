@@ -12,6 +12,14 @@
 
         @include for-size(desktop-up) {
             width: calc((100% - 30px * 2) / 3);
+            padding: 35px 48px;
+        }
+
+        svg {
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
         }
     }
 }

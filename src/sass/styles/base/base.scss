@@ -11,6 +11,11 @@ html {
 body {
     @include font-source-sans($main-text, $main-color, normal, 24px);
     @extend %reset;
+
+    @include for-size(desktop-up) {
+        font-size: 18px;
+        line-height: 32px;
+    }
 }
 
 ul {
@@ -39,7 +44,6 @@ svg {
 }
 
 .start {
-    font-size: 18px;
     line-height: 21px;
     margin: 20px 0 0;
     letter-spacing: 0.01em;
