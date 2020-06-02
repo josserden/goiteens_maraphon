@@ -3,7 +3,12 @@
         @include for-size(desktop-up) {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding-bottom: 10px;
+
+            &--text {
+                @include font-source-sans(28px, $heading-color, 700, 44px);
+            }
         }
     }
 
