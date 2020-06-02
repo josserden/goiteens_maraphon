@@ -1,15 +1,17 @@
 .btn {
     display: block;
     max-width: 280px;
+
     text: {
         align: center;
         decoration: none;
     }
-    font-size: $btn-text;
+    @include font-source-sans($btn-text, $btn-color, bold, 24px);
+    // font-size: $btn-text;
     border: solid 1px transparent;
     border-radius: 4px;
     padding: 22px 24px;
-    color: $btn-color;
+    // color: $btn-color;
     background-color: $accent-color;
     cursor: pointer;
     transition: background-color 0.2s;

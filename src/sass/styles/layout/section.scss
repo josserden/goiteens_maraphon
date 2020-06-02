@@ -5,6 +5,10 @@
 
     &--clr {
         background-color: $accent-backgound;
+
+        &-accent {
+            background-color: $accent-color;
+        }
     }
 
     &__header {
