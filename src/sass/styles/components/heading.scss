@@ -1,4 +1,5 @@
 .heading {
+
   display: inline-block;
   font-size: $heading-text-s;
   color: $main-white-color;
@@ -10,4 +11,14 @@
   display: block;
   font-size: 14px;
   color: $accent-color;
+
+    display: inline-block;
+    @include font-source-sans($heading-text-s, $main-white-color, 700, 32px);
+    @extend %reset;
+}
+
+.heading--accent {
+    display: block;
+    font-size: 14px;
+    color: $accent-color;
 }
