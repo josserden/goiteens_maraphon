@@ -2,11 +2,13 @@
   &__content {
     @include for-size(desktop-up) {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
     }
 
     &-info {
       padding: 15px;
+      margin: 0 auto;
+      text-align: center;
 
       @include for-size(desktop-up) {
         width: calc((100% - 30px) / 12 * 5);
