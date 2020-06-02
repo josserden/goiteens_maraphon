@@ -5,6 +5,29 @@
 
     &--clr {
         background-color: $accent-backgound;
+
+        &-accent {
+            background-color: $accent-color;
+        }
+    }
+
+    &--img-bg {
+        background: {
+            color: $overlay-color;
+            image: linear-gradient(
+                    0deg,
+                    rgba(0, 0, 0, 0.65) 0%,
+                    rgba(0, 0, 0, 0.05) 100%
+                ),
+                url('../images/banner-2.png');
+            size: cover;
+            repeat: no-repeat;
+            position: center;
+        }
+
+        @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url('../images/banner-2@2x.png');
+        }
     }
 
     &__header {
@@ -22,13 +45,15 @@
         }
     }
 
+    // &__list {
+    // }
+
     &__item {
         margin-bottom: 30px;
         padding-bottom: 15px;
 
         &-title {
-            @include font-source-sans(30px, $heading-color, 700, 23px);
-            margin: 0 0 20px 0;
+            @include font-source-sans(20px, $heading-color, 700, 23px);
         }
 
         img {

@@ -10,10 +10,10 @@
         color: $overlay-color;
         image: linear-gradient(
                 0deg,
-                rgba(0, 0, 0, 0.65) 0%,
-                rgba(0, 0, 0, 0.05) 100%
+                rgba(34, 34, 34, 0.7) 0%,
+                rgba(34, 34, 34, 0.7) 100%
             ),
-            url('../images/banner.png');
+            url(../images/banner.png);
         size: cover;
         repeat: no-repeat;
         position: center;
@@ -64,6 +64,20 @@
         line-height: 1.75;
         margin-bottom: 75px;
     }
+}
+
+.site__main-content {
+    font-size: 14px;
+    line-height: 24px;
+    color: $main-white-color;
+
+    @include for-size(tablet-portrait-up) {
+        font-size: 18px;
+    }
+}
+
+.site__content {
+    text-align: left;
 }
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {

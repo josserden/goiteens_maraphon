@@ -1,30 +1,55 @@
 .lectures {
-  &__list {
-    @include for-size(tablet-portrait-up) {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-    }
-  }
-
-  &__item {
-    background-color: #fff;
-
-    @include for-size(tablet-portrait-up) {
-      width: calc((100% - 30px) / 2);
+    &__list {
+        @include for-size(tablet-portrait-up) {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
     }
 
-    @include for-size(desktop-up) {
-      width: calc((100% - 30px * 3) / 4);
-    }
+    &__item {
+        background-color: #fff;
 
-    &--acc {
-      background-color: $accent-color;
-    }
+        &--content {
+            position: relative;
+            @include font-source-sans(14px, $heading-color, 700, 24px);
+            padding-top: 20px;
 
-    &-content {
-      padding: 40px 15px;
-      text-align: center;
+            &::before {
+                position: absolute;
+                @include psevdo;
+                @include size(40px, 2px);
+                background-color: #fff;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            @include for-size(tablet-portrait-up) {
+                @include font-source-sans(24px, $heading-color, 700, 1.75);
+                margin-bottom: 60px;
+            }
+        }
+
+        @include for-size(tablet-portrait-up) {
+            width: calc((100% - 30px) / 2);
+        }
+
+        @include for-size(desktop-up) {
+            width: calc((100% - 30px * 3) / 4);
+        }
+
+        &--acc {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: $accent-color;
+            padding: 30px;
+        }
+
+        &-content {
+            padding: 40px 15px;
+            text-align: center;
+        }
     }
-  }
 }
