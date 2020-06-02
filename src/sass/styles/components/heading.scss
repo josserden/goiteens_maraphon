@@ -1,16 +1,15 @@
 .heading {
-
-  display: inline-block;
-  font-size: $heading-text-s;
-  color: $main-white-color;
-  @extend %reset;
-  padding-top: 135px;
+    display: inline-block;
+    font-size: $heading-text-s;
+    color: $main-white-color;
+    @extend %reset;
+    margin-bottom: 50px;
 }
 
 .heading--accent {
-  display: block;
-  font-size: 14px;
-  color: $accent-color;
+    display: block;
+    font-size: 14px;
+    color: $accent-color;
 
     display: inline-block;
     @include font-source-sans($heading-text-s, $main-white-color, 700, 32px);

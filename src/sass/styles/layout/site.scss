@@ -1,57 +1,73 @@
 .site__header {
-  @include size(100vw, auto);
-  overflow: hidden;
-  min-height: 700px;
-  max-width: 100%;
-  @include padding(40px 0);
-  @include margin(null 0);
+    @include size(100vw, auto);
+    overflow: hidden;
+    min-height: 700px;
+    max-width: 100%;
+    @include padding(40px 0);
+    @include margin(null 0);
 
-  background: {
-    color: $overlay-color;
-    image: linear-gradient(0deg,
-        rgba(0, 0, 0, 0.65) 0%,
-        rgba(0, 0, 0, 0.05) 100%),
-      url('../images/banner.png');
-    size: cover;
-    repeat: no-repeat;
-    position: center;
-  }
+    background: {
+        color: $overlay-color;
+        image: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.65) 0%,
+                rgba(0, 0, 0, 0.05) 100%
+            ),
+            url('../images/banner.png');
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
 }
 
 .site__logo {
-
-    display: inline-block;
+    display: block;
     margin-bottom: 25px;
 
     @include for-size(tablet-portrait-up) {
         margin-bottom: 50px;
     }
 
-  &--link {
-    display: inline-block;
-    @include size(100%, auto);
-  }
+    &--link {
+        display: inline-block;
+        @include size(100%, auto);
+    }
 }
 
 .site__heading {
-  font: {
-    family: $heading-font-style;
-    size: 54px;
-    line-height: 75px;
-    weight: 600;
-  }
+    @include font-source(36px, 600);
+    @extend %reset;
+    margin-bottom: 50px;
+    font: {
+        family: $heading-font-style;
+    }
+    line-height: 42px;
 
-  color: $main-white-color;
+    color: $main-white-color;
+
+    @include for-size(tablet-portrait-up) {
+        @include font-source(54px, 600);
+        line-height: 75px;
+        margin-bottom: 75px;
+    }
 }
 
 .site__header--content {
-  font-size: 24px;
-  color: $main-white-color;
+    @extend %reset;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $main-white-color;
+
+    @include for-size(tablet-portrait-up) {
+        font-size: 24px;
+        line-height: 1.75;
+        margin-bottom: 75px;
+    }
 }
 
-@media (min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-  .background {
-    background-image: url('../images/banner@2x.png');
-  }
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .site__header {
+        background-image: url('../images/banner@2x.png');
+    }
 }
