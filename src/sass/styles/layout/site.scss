@@ -5,6 +5,7 @@
     max-width: 100%;
     @include padding(40px 0);
     @include margin(null 0);
+    text-align: center;
 
     background: {
         color: $overlay-color;
