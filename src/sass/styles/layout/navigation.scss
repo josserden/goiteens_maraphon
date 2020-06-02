@@ -11,10 +11,14 @@
 
 .navigation__item {
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 25px;
 
     &:nth-last-of-type(1) {
         margin-right: 0;
+    }
+
+    @include for-size(tablet-portrait-up) {
+        margin-right: 50px;
     }
 }
 
