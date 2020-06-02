@@ -8,27 +8,12 @@
     }
 
     font-size: $btn-text;
+    font-weight: 700;
     border: solid 1px transparent;
     border-radius: 4px;
     padding: 22px 24px;
     color: $btn-color;
-    background-color: $accent-color;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    margin: 0 auto;
-
-    display: block;
-    max-width: 280px;
-
-    text: {
-        align: center;
-        decoration: none;
-    }
-
-    @include font-source-sans($btn-text, $btn-color, bold, 24px);
-    border: solid 1px transparent;
-    border-radius: 4px;
-    padding: 22px 24px;
+    text-transform: uppercase;
     background-color: $accent-color;
     cursor: pointer;
     transition: background-color 0.2s;

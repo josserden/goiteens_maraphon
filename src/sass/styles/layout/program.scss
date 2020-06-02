@@ -12,21 +12,27 @@
 @include for-size(desktop-up) {
     .program {
         &__list {
-            padding: 50px 70px;
+            padding: 50px 0px;
+            max-width: 83.333%;
+            margin: 0 auto;
         }
 
         &__item {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
+
+            &:not(:last-child) {
+                margin-bottom: 100px;
+            }
 
             img {
                 margin: 0;
             }
 
             &-content {
-                width: calc(65% - 15px);
+                width: calc(50% - 30px);
                 font-size: large;
-                padding: 15px;
+                line-height: 32px;
             }
 
             &.reverse {
