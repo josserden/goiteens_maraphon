@@ -28,8 +28,7 @@
         display: block;
         content: '';
         background-color: $accent-color;
-        width: 100%;
-        height: 3px;
+        @include size(100%, 3px);
         margin: 2px auto 0;
         transition: opacity 0.2s;
     }

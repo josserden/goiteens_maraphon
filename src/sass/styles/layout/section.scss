@@ -27,7 +27,6 @@
     &__item {
         margin-bottom: 30px;
         padding-bottom: 15px;
-        // padding-bottom: 60px;
 
         &-title {
             @include font-source-sans(20px, $heading-color, 700, 23px);
