@@ -22,15 +22,13 @@
         }
     }
 
-    &__list {
-    }
-
     &__item {
         margin-bottom: 30px;
         padding-bottom: 15px;
 
         &-title {
             @include font-source-sans(30px, $heading-color, 700, 23px);
+            margin: 0 0 20px 0;
         }
 
         img {
