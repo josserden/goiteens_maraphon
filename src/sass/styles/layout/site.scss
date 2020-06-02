@@ -21,6 +21,11 @@
 
 .site__logo {
     display: inline-block;
+    margin-bottom: 25px;
+
+    @include for-size(tablet-portrait-up) {
+        margin-bottom: 50px;
+    }
 
     &--link {
         display: inline-block;
