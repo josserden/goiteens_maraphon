@@ -1,6 +1,5 @@
 .btn {
-    display: block;
-    max-width: 280px;
+    display: inline-block;
 
     text: {
         align: center;
@@ -43,4 +42,8 @@
 
 .js-focus-visible .btn:focus:not(.focus-visible) {
     box-shadow: none;
+}
+
+.btn-wrap {
+    text-align: center;
 }
