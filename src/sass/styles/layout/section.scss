@@ -1,39 +1,38 @@
 .section {
-    display: block;
-    @include size(100%, auto);
-    @include padding(50px null);
+  display: block;
+  @include size(100%, auto);
+  @include padding(50px null);
 
-    &--clr {
-        background-color: $accent-backgound;
+  &--clr {
+    background-color: $accent-backgound;
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    @extend %reset;
+    display: inline-block;
+    @include font-source-sans($heading-text-m, $heading-color, 600, 56px);
+
+    &--accent {
+      color: $accent-color;
+    }
+  }
+
+  &__list {}
+
+  &__item {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+
+    &-title {
+      @include font-source-sans(20px, $heading-color, 700, 23px);
     }
 
-    &__header {
-        text-align: center;
+    img {
+      width: 100%;
     }
-
-    &__title {
-        @extend %reset;
-        display: inline-block;
-        @include font-source-sans($heading-text-m, $heading-color, 600, 56px);
-
-        &--accent {
-            color: $accent-color;
-        }
-    }
-
-    &__list {
-    }
-
-    &__item {
-        margin-bottom: 30px;
-        padding-bottom: 15px;
-
-        &-title {
-            @include font-source-sans(20px, $heading-color, 700, 23px);
-        }
-
-        img {
-            width: 100%;
-        }
-    }
+  }
 }

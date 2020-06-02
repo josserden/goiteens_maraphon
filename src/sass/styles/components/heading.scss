@@ -1,12 +1,13 @@
 .heading {
-    display: inline-block;
-    font-size: $heading-text-s;
-    color: $main-white-color;
-    @extend %reset;
+  display: inline-block;
+  font-size: $heading-text-s;
+  color: $main-white-color;
+  @extend %reset;
+  padding-top: 135px;
 }
 
 .heading--accent {
-    display: block;
-    font-size: 14px;
-    color: $accent-color;
+  display: block;
+  font-size: 14px;
+  color: $accent-color;
 }

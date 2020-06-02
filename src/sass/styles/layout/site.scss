@@ -1,50 +1,51 @@
 .site__header {
-    @include size(100vw, auto);
-    overflow: hidden;
-    min-height: 700px;
-    max-width: 100%;
-    @include padding(40px 0);
-    @include margin(null 0);
-    background: {
-        color: $overlay-color;
-        image: linear-gradient(
-                0deg,
-                rgba(0, 0, 0, 0.65) 0%,
-                rgba(0, 0, 0, 0.05) 100%
-            ),
-            url('../images/banner.png');
-        size: cover;
-        repeat: no-repeat;
-        position: center;
-    }
+  @include size(100vw, auto);
+  overflow: hidden;
+  min-height: 700px;
+  max-width: 100%;
+  @include padding(40px 0);
+  @include margin(null 0);
+
+  background: {
+    color: $overlay-color;
+    image: linear-gradient(0deg,
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0.05) 100%),
+      url('../images/banner.png');
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
 }
 
 .site__logo {
-    display: inline-block;
+  display: inline-block;
 
-    &--link {
-        display: inline-block;
-        @include size(100%, auto);
-    }
+  &--link {
+    display: inline-block;
+    @include size(100%, auto);
+  }
 }
 
 .site__heading {
-    font: {
-        family: $heading-font-style;
-        size: 64px;
-        line-height: 75px;
-        weight: 600;
-    }
-    color: $main-white-color;
+  font: {
+    family: $heading-font-style;
+    size: 54px;
+    line-height: 75px;
+    weight: 600;
+  }
+
+  color: $main-white-color;
 }
 
-.site__header-content {
-    font-size: 24px;
-    color: $main-white-color;
+.site__header--content {
+  font-size: 24px;
+  color: $main-white-color;
 }
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .background {
-        background-image: url('../images/banner@2x.png');
-    }
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .background {
+    background-image: url('../images/banner@2x.png');
+  }
 }
