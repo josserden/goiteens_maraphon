@@ -1,0 +1,46 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.backdrop.is-visible {
+    display: flex;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 16px;
+    max-width: 600px;
+}
+
+.btn-close {
+    padding: 0;
+    border: none;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    @include position(absolute, 10px 10px null null);
+    @include size(20px, 20px);
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
