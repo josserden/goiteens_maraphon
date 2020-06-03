@@ -1,0 +1,1 @@
+"use strict";document.querySelector(".open").addEventListener("click",function(){document.querySelector(".backdrop").classList.add("is-visible")}),document.querySelector(".btn-close").addEventListener("click",function(){document.querySelector(".backdrop").classList.remove("is-visible")});
